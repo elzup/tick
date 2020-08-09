@@ -4,6 +4,5 @@ from datetime import datetime
 min1 = 60
 
 while True:
-  tdatetime = datetime.now()
-  print(tdatetime.strftime('%Y-%m-%dT%H:%M:%S'))
+  print(datetime.now().isoformat()[:-7])
   time.sleep(min1)
